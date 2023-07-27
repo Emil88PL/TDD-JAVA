@@ -33,7 +33,10 @@ jobs:
       - name: Make Release
         uses: softprops/action-gh-release@v0.1.5
         with:
-          files:
-            target/*.jar
+          files: release/*.jar
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # Pass the tag name to the action
+        # In this case, we're using the name of the tag associated with the push event
+    env:
+          GITHUB_REF: ${{ github.ref }}
