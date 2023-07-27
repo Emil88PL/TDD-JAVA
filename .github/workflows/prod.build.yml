@@ -35,4 +35,4 @@ jobs:
         with:
           files: release/*.jar
         env:
-          GITHUB_REF: ${{ github.ref }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
