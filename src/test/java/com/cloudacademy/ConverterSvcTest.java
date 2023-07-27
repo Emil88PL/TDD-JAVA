@@ -1,4 +1,4 @@
-package com.cloudacademy.bitcoin;
+package com.cloudacademy;
 
 import org.junit.Ignore;
 
